@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - SprintX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Include your header here -->
+        <nav class="container">
+            <a href="index.html" class="logo">SprintX</a>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#">Startup Community ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#">Solutions ▾</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="accelerators.html">Accelerators</a></li>
+                      <li><a href="investors.html">Investors</a></li>
+                      <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Marketplace ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Resources ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search SprintX">
+                </div>
+                <a href="sign-in.html" class="btn btn-outline">Sign in</a>
+                <a href="sign-up.html" class="btn btn-primary">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">SprintX Products</h1>
+                <p class="lead animate-on-scroll">Cutting-edge tools to accelerate your startup's growth</p>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <div class="container">
+                <div class="metric-grid">
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="5">0</h2>
+                        <p>Products</p>
+                    </div>
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="500">0</h2>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="98">0</h2>
+                        <p>% Customer Satisfaction</p>
+                    </div>
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="50">0</h2>
+                        <p>Integrations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-categories">
+            <div class="container">
+                <h2 class="animate-on-scroll"><i class="fas fa-cubes"></i> Our Product Categories</h2>
+                <div class="category-grid">
+                    <div class="category-item animate-on-scroll">
+                        <!-- <img src="icon-crm.svg" alt="CRM Icon"> -->
+                        <h3><i class="fas fa-users"></i> CRM Solutions</h3>
+                        <p>Manage your customer relationships effectively</p>
+                    </div>
+                    <div class="category-item animate-on-scroll">
+                        <!-- <img src="icon-analytics.svg" alt="Analytics Icon"> -->
+                        <h3><i class="fas fa-chart-line"></i> Analytics Tools</h3>
+                        <p>Gain insights from your data</p>
+                    </div>
+                    <div class="category-item animate-on-scroll">
+                        <!-- <img src="icon-project-management.svg" alt="Project Management Icon"> -->
+                        <h3><i class="fas fa-tasks"></i> Project Management</h3>
+                        <p>Streamline your team's workflow</p>
+                    </div>
+                    <div class="category-item animate-on-scroll">
+                        <!-- <img src="icon-marketing.svg" alt="Marketing Icon"> -->
+                        <h3><i class="fas fa-bullhorn"></i> Marketing Automation</h3>
+                        <p>Boost your marketing efforts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="animate-on-scroll"><i class="fas fa-star"></i> Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-item animate-on-scroll">
+                        <!-- <img src="product1.jpg" alt="SprintX CRM"> -->
+                        <h3><i class="fas fa-users"></i> SprintX CRM</h3>
+                        <p>All-in-one customer relationship management solution</p>
+                        <a href="#" class="btn btn-secondary toggle-details" data-target="crm-details">Learn More</a>
+                        <div class="product-details" id="crm-details">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Contact and lead management</li>
+                                <li>Sales pipeline tracking</li>
+                                <li>Email integration and automation</li>
+                                <li>Customizable reporting and analytics</li>
+                                <li>Mobile app for on-the-go access</li>
+                            </ul>
+                            <p>SprintX CRM helps you streamline your sales process, improve customer satisfaction, and drive growth for your business.</p>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="product-item animate-on-scroll">
+                        <!-- <img src="product2.jpg" alt="SprintX Analytics"> -->
+                        <h3><i class="fas fa-chart-bar"></i> SprintX Analytics</h3>
+                        <p>Advanced analytics and reporting platform</p>
+                        <a href="#" class="btn btn-secondary toggle-details" data-target="analytics-details">Learn More</a>
+                        <div class="product-details" id="analytics-details">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time data processing</li>
+                                <li>Interactive dashboards and reports</li>
+                                <li>Advanced machine learning algorithms</li>
+                                <li>Integration with multiple data sources</li>
+                                <li>Predictive analytics capabilities</li>
+                            </ul>
+                            <p>Unlock the full potential of your data and gain valuable insights to drive your business forward with SprintX Analytics.</p>
+                            <a href="#" class="btn btn-primary">Start Free Trial</a>
+                        </div>
+                    </div>
+                    <div class="product-item animate-on-scroll">
+                        <!-- <img src="product3.jpg" alt="SprintX Project"> -->
+                        <h3><i class="fas fa-project-diagram"></i> SprintX Project</h3>
+                        <p>Intuitive project management tool</p>
+                        <a href="#" class="btn btn-secondary toggle-details" data-target="project-details">Learn More</a>
+                        <div class="product-details" id="project-details">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Kanban boards and Gantt charts</li>
+                                <li>Task assignment and tracking</li>
+                                <li>Time tracking and resource management</li>
+                                <li>File sharing and version control</li>
+                                <li>Integration with popular productivity tools</li>
+                            </ul>
+                            <p>Boost your team's productivity and ensure project success with SprintX Project's powerful yet user-friendly interface.</p>
+                            <a href="#" class="btn btn-primary">Try It Free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2 class="animate-on-scroll">Ready to supercharge your startup?</h2>
+                <a href="#" class="btn btn-primary animate-on-scroll">Explore All Products</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer here -->
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
+
+
+<style>
+    /* Metrics section styles */
+.metrics {
+    background-color: #f0f0f0; /* Light background for neumorphism */
+    padding: 60px 0;
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.metric-item {
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 8px 8px 15px #d1d1d1, 
+                -8px -8px 15px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 20px #d1d1d1, 
+                -12px -12px 20px #ffffff;
+}
+
+.metric-item h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.metric-item p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* Animation for counter */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.metric-item .counter {
+    display: inline-block;
+    animation: countUp 1s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .metric-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .metric-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Product Categories Section */
+.product-categories {
+    background-color: #f0f0f0; /* Light background for neumorphism */
+    padding: 80px 0;
+}
+
+.product-categories .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.product-categories h2 {
+    font-size: 36px;
+    margin-bottom: 48px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.category-item {
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 8px 8px 15px #d1d1d1, 
+                -8px -8px 15px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 12px 12px 20px #d1d1d1, 
+                -12px -12px 20px #ffffff;
+}
+
+.category-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.1);
+}
+
+.category-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.category-item p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Animation for category items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.category-item.animate-on-scroll {
+    opacity: 0;
+}
+
+.category-item.animate-on-scroll.show {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Staggered animation delay for items */
+.category-item:nth-child(1) { animation-delay: 0.1s; }
+.category-item:nth-child(2) { animation-delay: 0.2s; }
+.category-item:nth-child(3) { animation-delay: 0.3s; }
+.category-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #f0f0f0; /* Light background for neumorphism */
+    padding: 80px 0;
+}
+
+.featured-products .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 48px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.product-item {
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 8px 8px 15px #d1d1d1, 
+                -8px -8px 15px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 12px 12px 20px #d1d1d1, 
+                -12px -12px 20px #ffffff;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.product-item p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.product-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px #d1d1d1, 
+                -4px -4px 8px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.product-item .btn:hover {
+    box-shadow: inset 4px 4px 8px #d1d1d1, 
+                inset -4px -4px 8px #ffffff;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px #d1d1d1, 
+                -8px -8px 15px #ffffff;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.cta .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #d1d1d1, 
+                -4px -4px 8px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: #0804db;
+    box-shadow: 6px 6px 10px #d1d1d1, 
+                -6px -6px 10px #ffffff;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+}
+
+.animate-on-scroll.show {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Staggered animation delay for items */
+.product-item:nth-child(1) { animation-delay: 0.1s; }
+.product-item:nth-child(2) { animation-delay: 0.2s; }
+.product-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Expandable product details */
+.product-details {
+    display: none; /* Ensure it's hidden by default */
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: inset 4px 4px 8px #d1d1d1, 
+                inset -4px -4px 8px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.product-details h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.product-details ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.product-details p {
+    margin-bottom: 15px;
+}
+
+.product-details .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.product-details .btn-primary:hover {
+    background: #0804db;
+}
+
+/* Animation for expanding details */
+@keyframes expandDetails {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-details.show {
+    display: block;
+    animation: expandDetails 0.3s ease forwards;
+}
+
+.product-details {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM fully loaded and parsed');
+
+        const toggleButtons = document.querySelectorAll('.toggle-details');
+        console.log('Number of toggle buttons found:', toggleButtons.length);
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Button clicked');
+
+                const targetId = this.getAttribute('data-target');
+                console.log('Target ID:', targetId);
+
+                const targetDetails = document.getElementById(targetId);
+                console.log('Target element:', targetDetails);
+
+                if (targetDetails) {
+                    if (targetDetails.style.display === 'block') {
+                        targetDetails.style.display = 'none';
+                        this.textContent = 'Learn More';
+                        console.log('Details hidden');
+                    } else {
+                        targetDetails.style.display = 'block';
+                        this.textContent = 'Show Less';
+                        console.log('Details shown');
+                    }
+                } else {
+                    console.log('Target element not found');
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
