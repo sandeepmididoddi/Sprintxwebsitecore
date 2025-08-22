@@ -1,0 +1,2 @@
+# Sprintxwebsitecore
+static website
