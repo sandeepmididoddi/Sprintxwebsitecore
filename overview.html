@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - SprintX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="animations.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">SprintX</a>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#">Startup Community ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#">Solutions ▾</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="accelerators.html">Accelerators</a></li>
+                      <li><a href="investors.html">Investors</a></li>
+                      <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Marketplace ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Resources ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search SprintX">
+                </div>
+                <a href="sign-in.html" class="btn btn-outline">Sign in</a>
+                <a href="sign-up.html" class="btn btn-primary">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">SprintX Overview</h1>
+                <p class="lead animate-on-scroll">Empowering startups to innovate, scale, and succeed</p>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <div class="container">
+                <div class="metric-grid">
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="100">0</h2>
+                        <p>Startups Accelerated</p>
+                    </div>
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="5000">0</h2>
+                        <p>Enterprenuers Engaged</p>
+                    </div>
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="10">0</h2>
+                        <p>Countries</p>
+                    </div>
+                    <div class="metric-item animate-on-scroll">
+                        <h2 class="counter" data-target="99.999">0</h2>
+                        <p>% Network Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .metrics {
+                background-color: #f8f9fa; /* Light background for the section */
+                padding: 60px 0;
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+            
+            .metric-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 30px;
+            }
+            
+            .metric-item {
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 30px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            
+            .metric-item:hover {
+                transform: translateY(-5px);
+            }
+            
+            .metric-item h2 {
+                font-size: 48px;
+                color: #0804db; /* Your primary color */
+                margin-bottom: 10px;
+            }
+            
+            .metric-item p {
+                font-size: 18px;
+                color: #333;
+                margin: 0;
+            }
+            
+            /* Animation for counters */
+            @keyframes countUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .animate-on-scroll {
+                opacity: 0;
+            }
+            
+            .animate-on-scroll.active {
+                animation: countUp 1s ease forwards;
+            }
+            
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .metric-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .metric-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+
+
+
+<section class="features">     
+<div class="dashboard">
+    <div class="metric">
+      <div class="circle-progress" data-percentage="85">
+        <span class="percentage">85%</span>
+      </div>
+      <p>Startup Growth</p>
+    </div>
+    <div class="metric">
+      <div class="circle-progress" data-percentage="73">
+        <span class="percentage">73%</span>
+      </div>
+      <p>Entrepreneurs Increased</p>
+    </div>
+    <div class="metric">
+      <div class="circle-progress" data-percentage="82">
+        <span class="percentage">82%</span>
+      </div>
+      <p>Innovation Hubs Integration</p>
+    </div>
+    <div class="metric">
+      <div class="circle-progress" data-percentage="89">
+        <span class="percentage">89%</span>
+      </div>
+      <p>Tech Event Participation</p>
+    </div>
+</div>
+
+<style> 
+    body {
+        background-color: #000000;
+        color: #0f0f0f;
+        font-family: Arial, sans-serif;
+      }
+      
+      .dashboard {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      
+      .metric {
+        text-align: center;
+        margin: 20px;
+      }
+      
+      .circle-progress {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: conic-gradient(#4ade80 var(--progress), #16213e 0deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      
+      .circle-progress::before {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #1a1a2e;
+      }
+      
+      .percentage {
+        position: relative;
+        font-size: 2em;
+        font-weight: bold;
+        color: #4ade80;
+      }
+      
+      p {
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const circles = document.querySelectorAll('.circle-progress');
+        
+        circles.forEach(circle => {
+          const percentage = circle.getAttribute('data-percentage');
+          const percentageSpan = circle.querySelector('.percentage');
+          
+          let progress = 0;
+          const interval = setInterval(() => {
+            progress++;
+            circle.style.setProperty('--progress', `${progress * 3.6}deg`);
+            percentageSpan.textContent = `${progress}%`;
+            
+            if (progress >= percentage) {
+              clearInterval(interval);
+            }
+          }, 20);
+        });
+      });
+</script>
+
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to accelerate your startup?</h2>
+            <p>Join thousands of entrepreneurs building the future with SprintX.</p>
+            <a href="sign-up.html" class="btn btn-primary">Sign up for free</a>
+        </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer here -->
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
+

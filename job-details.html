@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details - SprintX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="job-title">Job Title</h1>
+        <div id="job-description"></div>
+        <a href="#" class="btn btn-primary" id="apply-button">Apply for this position</a>
+    </div>
+
+    <script>
+        // Get the position from the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const position = urlParams.get('position');
+
+        // Function to fetch job details (you would replace this with actual data)
+        function getJobDetails(position) {
+            // This is a placeholder. In a real application, you would fetch this data from a server.
+            const jobDetails = {
+                'senior-software-engineer': {
+                    title: 'Senior Software Engineer',
+                    description: 'We are looking for a Senior Software Engineer to join our team...'
+                },
+                // Add more job details here
+            };
+            return jobDetails[position] || { title: 'Job Not Found', description: 'Sorry, this job listing is not available.' };
+        }
+
+        // Populate the page with job details
+        const jobDetails = getJobDetails(position);
+        document.getElementById('job-title').textContent = jobDetails.title;
+        document.getElementById('job-description').textContent = jobDetails.description;
+
+        // Set up the apply button
+        document.getElementById('apply-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Application submitted for ' + jobDetails.title);
+        });
+    </script>
+</body>
+</html>

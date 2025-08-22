@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SprintX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="index" href="index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <form class="animate-on-scroll sign-up-form"> <!-- Ensure this class is present -->
+</head>
+<body>
+    <header>
+        <!-- Include your header here -->
+        <nav class="container">
+            <a href="index.html" class="logo">SprintX</a>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#">Startup Community ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#">Solutions ▾</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="accelerators.html">Accelerators</a></li>
+                      <li><a href="investors.html">Investors</a></li>
+                      <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Marketplace ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Resources ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search SprintX">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sign-up">
+            <div class="container">
+                <h1 class="animate-on-scroll">Join SprintX</h1>
+                <form class="animate-on-scroll">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">I am a:</label>
+                        <select id="role" name="role" required>
+                            <option value="">Select your role</option>
+                            <option value="founder">Startup Founder</option>
+                            <option value="investor">Investor</option>
+                            <option value="mentor">Mentor</option>
+                            <option value="service-provider">Service Provider</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                <div class="social-sign-up animate-on-scroll">
+                    <p class="or-divider animate-on-scroll">_____OR_____</p>                    <div class="social-buttons">
+                        <button class="btn btn-social btn-google">Google</button>
+                        <button class="btn btn-social btn-linkedin">LinkedIn</button>
+                    </div>
+                </div>
+                <p class="sign-in-prompt animate-on-scroll">
+                    Already have an account? <a href="sign-in.html">Sign in</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer here -->
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
+
+
+
+<style>
+    /* Centering the sign-up form */
+.sign-up {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: calc(100vh - 100px); /* Adjust height to account for header */
+    padding: 20px; /* Add some padding */
+}
+
+.sign-up .container {
+    max-width: 400px; /* Limit the width of the form */
+    width: 100%; /* Full width for smaller screens */
+}
+
+/* Neumorphism styles for the sign-up form */
+.sign-up-form {
+    background-color: var(--background-color);
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1), 
+                -8px -8px 20px rgba(255, 255, 255, 0.7);
+    padding: 32px; /* Increased padding for a spacious feel */
+}
+
+/* Input fields */
+.sign-up-form .form-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    position: relative;
+}
+
+.sign-up-form input,
+.sign-up-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+}
+
+    .sign-up-form {
+        background-color: var(--header-color);
+        border: 1px solid rgb(244, 97, 80);
+        border-radius: 8px;
+        padding: 50px;
+        font-size: 16px;
+        box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.1), 
+                inset -6px -6px 10px rgba(255, 255, 255, 0.7);
+    }
+    .sign-up-form input,
+    .sign-up-form select {
+        background-color: var(--header-color);
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 16px;
+        box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.1), 
+                inset -6px -6px 10px rgba(255, 255, 255, 0.7);
+    }
+    .sign-up-form input:focus,
+    .sign-up-form select:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgb(81, 80, 80);
+    }
+
+    /* Button styles */
+.sign-up-form .btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 1px solid rgb(66, 65, 65);
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px 0px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
+                -4px -4px 10px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    width: 100%; /* Full width for buttons */
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.sign-up-form .btn:hover {
+    background-color: #d4d4d8; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sign-up-form {
+        padding: 24px; /* Reduce padding on mobile */
+    }
+
+    .sign-up-form .form-group {
+        margin-bottom: 16px; /* Adjust margin for mobile */
+    }
+
+    .sign-up-form input,
+    .sign-up-form select {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+
+    .sign-up-form .btn {
+        padding: 10px; /* Adjust button padding for mobile */
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 769px) {
+    .sign-up-form {
+        padding: 32px; /* More padding on larger screens */
+    }
+
+    .sign-up-form input,
+    .sign-up-form select {
+        font-size: 16px; /* Larger font size for inputs */
+    }
+
+    .sign-up-form .btn {
+        padding: 12px 16px; /* Standard button padding */
+    }
+}
+
+/* Styles for the sign-in prompt */
+.sign-in-prompt {
+    text-align: match-parent; /* Center the text */
+    margin-top: 20px; /* Add some space above */
+    font-size: 16px; /* Adjust font size */
+    color: var(--text-color); /* Use a variable for text color */
+    font-weight: 600; /* Make the text bold */
+}
+
+/* Styles for the OR divider */
+.or-divider {
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Add some vertical spacing */
+    font-size: 16px; /* Adjust font size if needed */
+    color: var(--text-color); /* Use a variable for text color */
+}
+
+/* Link styles */
+.sign-in-prompt a {
+    color: var(--primary-color); /* Use primary color for the link */
+    text-decoration: underline; /* Underline the link */
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sign-in-prompt a:hover {
+    color: rgb(244, 97, 80); /* Change color on hover */
+}
+</style>

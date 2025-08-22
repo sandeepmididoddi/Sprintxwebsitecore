@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners - SprintX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="charts.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <!-- Include your header here -->
+        <nav class="container">
+            <a href="index.html" class="logo">SprintX</a>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#">Startup Community ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#">Solutions ▾</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="accelerators.html">Accelerators</a></li>
+                      <li><a href="investors.html">Investors</a></li>
+                      <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Marketplace ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Resources ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search SprintX">
+                </div>
+                <a href="sign-in.html" class="btn btn-outline">Sign in</a>
+                <a href="sign-up.html" class="btn btn-primary">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">Partner with SprintX</h1>
+                <p class="lead animate-on-scroll">Join our ecosystem and drive innovation together</p>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <div class="container">
+                <div class="metric-grid">
+                    <div class="metric-item animate-on-scroll neuromorphic">
+                        <h3>Global Partners</h3>
+                        <div class="chart-container">
+                            <canvas id="globalPartnersChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="metric-item animate-on-scroll neuromorphic">
+                        <h3>Industries Served</h3>
+                        <div class="chart-container">
+                            <canvas id="industriesServedChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="metric-item animate-on-scroll neuromorphic">
+                        <h3>Startups Supported</h3>
+                        <div class="chart-container">
+                            <canvas id="startupsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="metric-item animate-on-scroll neuromorphic">
+                        <h3>Value Generated (Million $)</h3>
+                        <div class="chart-container">
+                            <canvas id="valueChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partner-types">
+            <div class="container">
+                <h2 class="animate-on-scroll">Partnership Opportunities</h2>
+                <div class="type-grid">
+                    <div class="type-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-building"></i>
+                        <h3>Corporate Partners</h3>
+                        <p>Collaborate with startups to drive innovation in your industry</p>
+                        <a href="#" class="btn btn-secondary toggle-content">Learn More</a>
+                        <div class="expanded-content">
+                            <p>Our corporate partnership program connects established companies with innovative startups, fostering collaboration and driving industry-wide innovation.</p>
+                        </div>
+                    </div>
+                    <div class="type-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-university"></i>
+                        <h3>Academic Institutions</h3>
+                        <p>Bridge the gap between research and commercialization</p>
+                        <a href="#" class="btn btn-secondary toggle-content">Learn More</a>
+                        <div class="expanded-content">
+                            <p>We help academic institutions turn groundbreaking research into commercial success, providing resources and connections to bring innovations to market.</p>
+                        </div>
+                    </div>
+                    <div class="type-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Government Agencies</h3>
+                        <p>Support economic growth and innovation initiatives</p>
+                        <a href="#" class="btn btn-secondary toggle-content">Learn More</a>
+                        <div class="expanded-content">
+                            <p>Our partnerships with government agencies focus on fostering innovation ecosystems, supporting local economies, and driving technological advancements.</p>
+                        </div>
+                    </div>
+                    <div class="type-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Service Providers</h3>
+                        <p>Offer your expertise to our startup ecosystem</p>
+                        <a href="#" class="btn btn-secondary toggle-content">Learn More</a>
+                        <div class="expanded-content">
+                            <p>Service providers can tap into our network of startups, offering valuable services and gaining exposure to innovative companies across various industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2 class="animate-on-scroll">Benefits of Partnering</h2>
+                <div class="benefit-grid">
+                    <div class="benefit-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Drive Innovation</h3>
+                        <p>Access cutting-edge technologies and ideas</p>
+                    </div>
+                    <div class="benefit-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Expand Your Network</h3>
+                        <p>Connect with industry leaders and startups</p>
+                    </div>
+                    <div class="benefit-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-eye"></i>
+                        <h3>Increase Visibility</h3>
+                        <p>Showcase your brand to our global community</p>
+                    </div>
+                    <div class="benefit-item animate-on-scroll neuromorphic">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Accelerate Growth</h3>
+                        <p>Tap into new markets and opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-partners">
+            <div class="container">
+                <h2 class="animate-on-scroll">Featured Partners</h2>
+                <div class="partner-logo-grid">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="animate-on-scroll">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="animate-on-scroll">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="animate-on-scroll">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="animate-on-scroll">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Intel_logo_%282006-2020%29.svg" alt="Intel" class="animate-on-scroll">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="animate-on-scroll">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <h2 class="animate-on-scroll">Partner Success Story</h2>
+                <div class="testimonial-item animate-on-scroll neuromorphic">
+                    <!-- <img src="partner-image.jpg" alt="Partner Representative"> -->
+                    <blockquote>
+                        <i class="fas fa-quote-left"></i>
+                        Our partnership with SprintX has been transformative. We've been able to tap into a wealth of innovative ideas and talented entrepreneurs, driving our company's growth in new and exciting directions.
+                        <i class="fas fa-quote-right"></i>
+                    </blockquote>
+                    <cite><i class="fas fa-user"></i> Sarah, Innovation Director</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to accelerate your startup?</h2>
+                    <p>Join thousands of entrepreneurs building the future with SprintX.</p>
+                    <a href="sign-up.html" class="btn btn-primary">Sign up for free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer here -->
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
+
+
+
+<style>
+   /* Add this to your existing CSS */
+
+.partner-types,
+.benefits,
+.featured-partners,
+.testimonial {
+    background-color: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2d3748;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.type-grid,
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.type-item,
+.benefit-item,
+.testimonial-item {
+    background-color: #e0e5ec;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.type-item:hover,
+.benefit-item:hover,
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+}
+
+.type-item i,
+.benefit-item i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    color: #2d3748;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expanded-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+}
+
+.partner-logo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logo-grid img {
+    max-width: 100px;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-item blockquote {
+    font-style: italic;
+    position: relative;
+    padding: 20px;
+}
+
+.testimonial-item i.fa-quote-left,
+.testimonial-item i.fa-quote-right {
+    font-size: 2rem;
+    color: #3498db;
+    opacity: 0.5;
+}
+
+.testimonial-item i.fa-quote-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonial-item i.fa-quote-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+}
+
+.animated {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .type-grid,
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const chartConfig = {
+            type: 'bar',
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+    
+        const years = ['2020', '2021', '2022', '2023', '2024'];
+    
+        const charts = [
+            {
+                id: 'globalPartnersChart',
+                data: [300, 350, 400, 450, 500]
+            },
+            {
+                id: 'industriesServedChart',
+                data: [30, 35, 40, 45, 50]
+            },
+            {
+                id: 'startupsChart',
+                data: [600, 700, 800, 900, 1000]
+            },
+            {
+                id: 'valueChart',
+                data: [60, 70, 80, 90, 100]
+            }
+        ];
+    
+        charts.forEach(chart => {
+            const ctx = document.getElementById(chart.id).getContext('2d');
+            new Chart(ctx, {
+                ...chartConfig,
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: chart.id.replace('Chart', ''),
+                        data: chart.data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                }
+            });
+        });
+    });
+
+    //* Animate on scroll *//
+    document.addEventListener('DOMContentLoaded', function() {
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+    
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        });
+    
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Expandable content
+        const toggleButtons = document.querySelectorAll('.toggle-content');
+        
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    this.textContent = 'Learn More';
+                } else {
+                    content.style.display = 'block';
+                    this.textContent = 'Show Less';
+                }
+            });
+        });
+    
+        // Animate on scroll
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+    
+        // Auto-scroll featured partners
+        const partnerGrid = document.querySelector('.partner-logo-grid');
+        let scrollPosition = 0;
+        const scrollSpeed = 1;
+    
+        function autoScroll() {
+            scrollPosition += scrollSpeed;
+            if (scrollPosition >= partnerGrid.scrollWidth / 2) {
+                scrollPosition = 0;
+            }
+            partnerGrid.scrollLeft = scrollPosition;
+            requestAnimationFrame(autoScroll);
+        }
+    
+        autoScroll();
+    });
+</script>
+
+
+
+
+
+
